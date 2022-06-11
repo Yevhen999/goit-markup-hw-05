@@ -122,6 +122,9 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--first-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-item,
@@ -159,6 +162,9 @@ img {
 
 .nav-contacts-list {
   color: var(--second-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contacts-list:hover,
@@ -168,10 +174,11 @@ img {
 }
 
 .mail-icon-svg {
-  /* height: 12px;
-  width: 16px; */
   fill: var(--second-color);
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contacts-list:hover .mail-icon-svg,
@@ -185,10 +192,11 @@ img {
 }
 
 .tel-icon-svg {
-  /* height: 16px;
-  width: 10px; */
   fill: var(--second-color);
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contacts .nav-contacts-list {
@@ -461,6 +469,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover,
@@ -472,6 +483,9 @@ img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover .soc-icon,
@@ -500,10 +514,10 @@ img {
   justify-content: space-between;
 }
 
-.clients-item:hover,
+/* .clients-item:hover,
 .clients-item:focus {
   color: var(--accent-color);
-}
+} */
 
 .clients-link {
   width: 170px;
@@ -514,6 +528,9 @@ img {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-svg {
@@ -578,6 +595,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-accent);
   display: inline-block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail {
@@ -627,6 +647,9 @@ img {
   justify-content: center;
   border-radius: 50%;
   color: var(--third-background-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
@@ -713,10 +736,13 @@ img {
   background-color: var(--second-background-color);
   color: var(--first-color);
   cursor: pointer;
-
+  box-shadow: none;
   padding: 6px 22px;
   border-radius: 4px;
   border-color: transparent;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover,
@@ -775,6 +801,10 @@ img {
 
 .portfolio-link {
   display: block;
+  box-shadow: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
