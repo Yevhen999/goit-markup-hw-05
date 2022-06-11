@@ -390,9 +390,6 @@ img {
   background-color: var(--second-background-color);
 }
 
-/* padding-top: 94px;
-  padding-bottom: 94px; */
-
 .team-title {
   margin-right: auto;
   margin-left: auto;
@@ -640,13 +637,57 @@ img {
 .footer-soc-link:focus {
   background-color: var(--accent-color);
 }
-/*      Portfolio      */
 
-/* .portfolio {
-  background-color: var(--first-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
+/*        MODAL        */
+
+.backdrop {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  transition: opacity 300ms, visibility 300ms;
+}
+
+.modal {
+  position: absolute;
+  background-color: var(--third-background-color);
+  width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-close-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background-color: var(--third-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+/*      Portfolio      */
 
 .portfolio h1 {
   display: none;
@@ -740,4 +781,29 @@ img {
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay-text {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 63px 24px;
+
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 250ms;
+}
+
+.portfolio-item:hover .portfolio-overlay-text {
+  transform: translateY(0);
 }
